@@ -12,3 +12,9 @@ spring:
     show-sql: true
   jackson:
     default-property-inclusion: non_null
+
+
+google:
+  maps:
+    api:
+      key: AIzaSyAmZ1U67h6rpxHjjDpP85SkyMuS0ZjoObQ
