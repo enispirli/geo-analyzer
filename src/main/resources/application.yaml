@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/geo_analyzer
+    username: postgres
+    password: yumpas
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
