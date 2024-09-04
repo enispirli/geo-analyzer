@@ -13,6 +13,7 @@ import com.interview.geoanalyzer.thirdparty.GoogleMapsService;
 import com.interview.geoanalyzer.thirdparty.dto.GeoDataOutput;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -30,6 +31,7 @@ public class LocalServiceImpl implements LocalService {
 
     private final LocationRepository locationRepository;
 
+    @Transactional
     @Override
     public DeviceLocationOutputDTO sendLocation(DeviceLocationInputDTO inputDTO) {
 
